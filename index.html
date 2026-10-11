@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cube Runner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div class="hud-block">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="hud-block">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <div id="overlay" class="visible">
+      <h1>CUBE RUNNER</h1>
+      <p>A cube. A track. Don’t get hit.</p>
+      <ul>
+        <li><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> change lanes</li>
+        <li><kbd>Space</kbd> / <kbd>↑</kbd> jump · tap the screen to jump</li>
+        <li>Swipe left or right to switch lanes</li>
+      </ul>
+      <button id="startBtn" type="button">Start run</button>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
